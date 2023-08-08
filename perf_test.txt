@@ -1,0 +1,32 @@
+Beego
+Running 30s test @ http://127.0.0.1:8080
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    16.03ms    1.90ms  52.37ms   97.85%
+    Req/Sec     1.26k   303.54     1.80k    66.17%
+  450939 requests in 30.03s, 138.48MB read
+  Socket errors: connect 155, read 109, write 0, timeout 0
+Requests/sec:  15018.63
+Transfer/sec:      4.61MB
+
+FastApi
+Running 30s test @ http://127.0.0.1:8080
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.90ms    2.39ms  75.11ms   97.51%
+    Req/Sec   652.42    134.85     1.22k    64.17%
+  234180 requests in 30.09s, 33.72MB read
+  Socket errors: connect 155, read 110, write 0, timeout 0
+Requests/sec:   7781.46
+Transfer/sec:      1.12MB
+
+Django
+Running 30s test @ http://127.0.0.1:8000
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   223.75ms   87.92ms 778.74ms   71.23%
+    Req/Sec    88.17     36.45   210.00     63.66%
+  31606 requests in 30.09s, 330.02MB read
+  Socket errors: connect 155, read 1278, write 18, timeout 0
+Requests/sec:   1050.41
+Transfer/sec:     10.97MB
